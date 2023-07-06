@@ -9,39 +9,35 @@
 
 /* FONTS */
 @font-face {
-  font-family: 'Nunito Sans 7pt';
-  src: url('fonts/NunitoSans7pt-SemiBold.woff2') format('woff2'),
-    url('fonts/NunitoSans7pt-SemiBold.woff') format('woff');
-  font-weight: 600;
-  font-style: normal;
   font-display: swap;
-}
-
-@font-face {
-  font-family: 'Nunito Sans 7pt Condensed';
-  src: url('../fonts/NunitoSans7ptCondensed-ExtraBold.woff2') format('woff2'),
-    url('../fonts/NunitoSans7ptCondensed-ExtraBold.woff') format('woff');
-  font-weight: bold;
+  font-family: 'Nunito Sans';
   font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Nunito Sans 7pt Condensed';
-  src: url('../fonts/NunitoSans7ptCondensed-Light.woff2') format('woff2'),
-    url('../fonts/NunitoSans7ptCondensed-Light.woff') format('woff');
   font-weight: 300;
-  font-style: normal;
-  font-display: swap;
+  src: url('../fonts/nunito-sans-v15-latin-300.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: 'Nunito Sans 7pt Condensed';
-  src: url('../fonts/NunitoSans7ptCondensed-Regular.woff2') format('woff2'),
-    url('../fonts/NunitoSans7ptCondensed-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
   font-display: swap;
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/nunito-sans-v15-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/nunito-sans-v15-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/nunito-sans-v15-latin-800.woff2') format('woff2'); 
 }
 
 
@@ -71,6 +67,7 @@ body {
   line-height: 16px;
   background-color: var(--body-bg);
   color: var(--text-color);
+  white-space: nowrap;
 }
 
 img {
@@ -104,4 +101,61 @@ a {
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
+}
+
+
+/* SITE HEADER */
+.site-header {
+  padding: 24px;
+  padding-bottom: 24px;
+  background-color: var(--element-bg);
+}
+
+.site-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-header-logo {
+  font-size: 24px;
+  line-height: normal;
+  font-weight: 800;
+  color: var(--text-color);
+}
+
+.site-header-logo:hover {
+  opacity: 0.8;
+}
+
+.site-header-logo:active {
+  opacity: 0.6;
+}
+
+.site-header-theme-toggler {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+.site-header-theme-toggler:hover {
+  opacity: 0.8;
+}
+
+.site-header-theme-toggler:active {
+  opacity: 0.6;
+}
+
+.site-header-theme-toggler-inner {
+  display: flex;
+  align-items: center;
+}
+
+.site-header-theme-toggler-text {
+  margin-left: 8px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
 }
